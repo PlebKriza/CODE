@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/css signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <script>
+        function validateForm() {
+            let email = document.forms["sign_up"]["email"].value;
+            let password = document.forms["sign_up"]["password"].value;
+
+            if (email == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            if (password == "") {
+                alert("Password must be filled out");
+                return false;
+            }
+            if (password.length < 8) {
+                alert("Password lenght must be more 8 character ");
+                return false;
+            }
+        }
+    </script>
+
+    <title>Sign up</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="col-left">
+            <div class="info-left">
+                <div class="text-display">
+                    Welcome Traveller
+                </div>
+                <div class="btn-left">
+                    <div class="example"><a href="#">See Example</a></div>
+                    <div class="more"><a href="#">Explore</a></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-right">
+            <div class="logo">{OUTPOST}</div>
+            <div class="text-welcome">We meet again</div>
+            <div class="text-detail">Welcome to the Sign up Page</div>
+            <div class="form">
+
+                <form name="post-edit" action="/post-edit" method="POST">
+                    Fullname: <input type="text" name="fullname" id="fullname" class="form-control" value="{{ user[0] }}"> Email: <input type="email" name="email" id="email" value="{{ user[1] }}" class="form-control">
+                    <input type="password" name="password" id="password" placeholder="Password" class="form-control form-control-sm">
+                    <input type="password" name="psw-repeat" id="psw-repeat" placeholder="Repeat Password" class="form-control form-control-sm">
+                    <input type="submit" value="Sign up" class="button ">
+
+
+                </form>
+            </div>
+
+            <div class="text-signup ">If you have an account please
+                <a href="/signin ">Sign In</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
+
+</html>

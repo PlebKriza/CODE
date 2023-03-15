@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <script>
+        function validateForm() {
+            let email = document.forms["sign_up"]["email"].value;
+            let password = document.forms["sign_up"]["password"].value;
+
+            if (email == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            if (password == "") {
+                alert("Password must be filled out");
+                return false;
+            }
+            if (password.length < 8) {
+                alert("Password lenght must be more 8 character ");
+                return false;
+            }
+        }
+    </script>
+
+    <title>Sign up | Sign in</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="col-left">
+            <div class="info-left">
+                <div class="text-display">
+                    Welcome To <br> Our Company
+                </div>
+                <div class="btn-left">
+                    <div class="example"><a href="#">See Example</a></div>
+                    <div class="more"><a href="#">Read More</a></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-right">
+            <div class="logo">{OUTPOST}</div>
+            <div class="text-welcome">Hello, Again</div>
+            <div class="text-detail">Welcome to Login Page</div>
+            <div class="form">
+                <form name="sign_up" action="/post-signin" onsubmit="return validateForm()" method="POST">
+                    <!-- <input type="email " name="email" id="email" placeholder="Email " class="email "> -->
+                    <input type="text " name="username" id="userName" placeholder="Username/Email " class="signup ">
+                    <input type="password" name="password" id="password" placeholder="Password " class="password ">
+                    <input type="submit" value="Login" class="button ">
+                    <div class="hr ">- Or -</div>
+                    <div class="btn "><a href="# "><i class='bx bxl-google'></i> Sign in with Google</a>
+                    </div>
+                </form>
+            </div>
+            <div class="text-signup ">If you don't have an account Please
+                <a href="/signup ">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+</html>

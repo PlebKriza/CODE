@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #06064f;
+}
+
+.container {
+    width: 900px;
+    height: 530px;
+    background-color: #fff;
+    box-shadow: 2px 2px #888888;
+    border-radius: 15px;
+    display: flex;
+}
+
+.container .col-left {
+    width: 50%;
+    height: 100%;
+    background-color: #35589A;
+    border-radius: 10px 0px 0px 10px;
+    background-image: url('/static/img/Fantasy.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.container .col-left .info-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .col-left .info-left .text-display {
+    font-size: 40px;
+    font-weight: 600;
+    color: #92a4f1;
+    -webkit-text-stroke: 1px white;
+}
+
+.container .col-left .info-left .btn-left {
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .col-left .info-left .btn-left .example a {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #9e8466;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.container .col-left .info-left .btn-left .example a:hover {
+    color: #000;
+    background-color: #fff;
+    border: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .col-left .info-left .btn-left .more a {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.container .col-left .info-left .btn-left .more a:hover {
+    color: #000;
+    background-color: transparent;
+    border: 2px solid #9e8466;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .col-right {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .col-right .logo {
+    font-size: 48px;
+    font-weight: 700;
+    color: #3e3d4f;
+    -webkit-text-stroke: 1px #000;
+}
+
+.container .col-right .text-welcome {
+    font-size: 24px;
+    font-weight: 500;
+    color: #3e3d4f;
+}
+
+.container .col-right .text-detail {
+    font-size: 18px;
+    font-weight: 400;
+    color: #3e3d4f;
+}
+
+.container .col-right .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .col-right .form .email,
+.container .col-right .form .signup,
+.container .col-right .form .password {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border: 1px solid #35589A;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container .col-right .form .button {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #35589A;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .col-right .form .button:hover {
+    border: 1px solid #35589A;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
+
+.container .col-right .form .hr {
+    margin-top: 20px;
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .col-right .form .btn {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #35589A;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.container .col-right .form .btn a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container .col-right .form .btn:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #35589A;
+}
+
+.container .col-right .form .btn a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container .col-right .text-signup {
+    font-size: 16px;
+    font-weight: 400;
+    color: #35589A;
+    margin-top: 30px;
+}
+
+.container .col-right .text-signup a {
+    color: #35589A;
+}
